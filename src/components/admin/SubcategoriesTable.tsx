@@ -44,11 +44,16 @@ export default function SubcategoriesTable({
     },
     {
       header: "Category",
-      accessor: (row) => (
-        <span className="text-sm text-gray-600">
-          {typeof row.category === "object" ? row.category?.name : "N/A"}
-        </span>
-      ),
+      accessor: (row) => {
+        const categoryName = typeof row.category === "object" && row.category 
+          ? row.category.name 
+          : (typeof row.category === "string" ? row.category : "N/A");
+        return (
+          <span className="text-sm text-gray-600">
+            {categoryName}
+          </span>
+        );
+      },
       sortable: true,
     },
     {

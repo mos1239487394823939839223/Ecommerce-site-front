@@ -40,7 +40,7 @@ export default function SubcategoryForm({
       setFormData({
         name: subcategory.name || "",
         image: subcategory.image || "",
-        category: subcategory.category || "",
+        category: typeof subcategory.category === "object" ? subcategory.category._id : subcategory.category || "",
         slug: subcategory.slug || "",
       });
     }

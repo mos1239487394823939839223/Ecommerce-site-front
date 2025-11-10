@@ -50,7 +50,7 @@ export interface Subcategory {
   _id: string;
   name: string;
   image: string;
-  category: string;
+  category: string | { _id: string; name: string; image?: string };
   slug: string;
   createdAt: string;
   updatedAt: string;
