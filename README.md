@@ -42,7 +42,8 @@ All API calls automatically go to your production backend. No configuration need
 - `src/services/clientApi.ts` - Public API calls (products, categories, auth)
 - `src/services/adminApi.ts` - Admin API calls (CRUD operations)
 - `src/app/admin/` - Admin dashboard pages
-- `PRODUCTION_SETUP.md` - Detailed production configuration guide
+- **`YOUR_BACKEND_FIX.md`** - ⭐ Your specific backend setup guide
+- `STATUS.md` - Current project status and what to do next
 
 ---
 
