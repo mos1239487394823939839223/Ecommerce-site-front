@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "_id": "user_1762105358761_ycmgid",
+      "name": "Amr Mahmoud Farghly",
+      "email": "mamr32278@gmail.com",
+      "password": "071705ffda5edd6027429583a67d20bed8ef8224db93abe8430cfe178d8b554a",
+      "phone": "01554016562",
+      "role": "user",
+      "active": true,
+      "addresses": [],
+      "createdAt": "2025-11-02T17:42:38.761Z",
+      "updatedAt": "2025-11-02T17:42:38.761Z"
+    },
+    {
+      "_id": "user_1762105510005_e8k4x",
+      "name": "Amr Mahmoud ",
+      "email": "mamr3227222222222222228@gmail.com",
+      "password": "3f41f5f9be57c8e4caedd3ebfac307ddad6dad0bfb9fa2a85e8e258b9a512968",
+      "phone": "01554016562",
+      "role": "user",
+      "active": true,
+      "addresses": [],
+      "createdAt": "2025-11-02T17:45:10.005Z",
+      "updatedAt": "2025-11-02T17:45:10.005Z"
+    },
+    {
+      "_id": "user_1762333452929_uf74tc",
+      "name": "Amr Mahmoud",
+      "email": "mamr3227ssss8@gmail.com",
+      "password": "10e6dc31559290b9e1cd3d3f43a9cce2e46730b0f615c9f8b2c0029de0a07c40",
+      "phone": "+201069513679",
+      "role": "user",
+      "active": true,
+      "addresses": [],
+      "createdAt": "2025-11-05T09:04:12.929Z",
+      "updatedAt": "2025-11-05T09:04:12.929Z"
+    },
+    {
+      "_id": "user_1762334281387_71pxg",
+      "name": "youssef haha",
+      "email": "test@example.com",
+      "password": "973dfe463ec85785f5f95af5ba3906eedb2d931c24e69824a89ea65dba4e813b",
+      "phone": "01060040247",
+      "role": "user",
+      "active": true,
+      "addresses": [],
+      "createdAt": "2025-11-05T09:18:01.387Z",
+      "updatedAt": "2025-11-05T09:18:01.387Z"
+    },
+    {
+      "_id": "user_1762698410289_5uekms",
+      "name": "mostafaelfalla4@gmail.com",
+      "email": "mostafaelfalla4@gmail.com",
+      "password": "f5bda9db26a97cb51cbea48590f48f2310836ce629ef58d00e3e12f43049f4c8",
+      "phone": "01554016562",
+      "role": "user",
+      "active": true,
+      "addresses": [],
+      "createdAt": "2025-11-09T14:26:50.289Z",
+      "updatedAt": "2025-11-09T14:26:50.289Z"
+    }
+  ]
+}

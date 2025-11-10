@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "_id": "category_1762104436481_3ddhw6",
+      "name": "ddddddddd",
+      "image": "httpd://dddddddd.com",
+      "slug": "ddddddddd",
+      "createdAt": "2025-11-02T17:27:16.481Z",
+      "updatedAt": "2025-11-02T17:27:16.481Z"
+    },
+    {
+      "_id": "category_demo_electronics",
+      "name": "Electronics",
+      "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=400",
+      "slug": "electronics",
+      "createdAt": "2025-11-05T00:00:00.000Z",
+      "updatedAt": "2025-11-05T00:00:00.000Z"
+    }
+  ]
+}
