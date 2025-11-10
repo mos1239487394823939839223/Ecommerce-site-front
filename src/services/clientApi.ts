@@ -1,6 +1,6 @@
 // Backend API Configuration
 // Using deployed backend on Vercel
-export const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-oriu.vercel.app/api/v1";
+export const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1";
 
 export interface Product {
   _id: string;

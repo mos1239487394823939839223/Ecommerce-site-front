@@ -7,7 +7,7 @@ Your frontend is **fixed and building successfully**!
 - ✅ All build errors fixed
 - ✅ Code pushed to GitHub
 - ✅ Vercel will auto-deploy in ~2 minutes
-- ✅ Connected to backend: `https://ecommerce-site-backend-oriu.vercel.app/api/v1`
+- ✅ Connected to backend: `https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1`
 - ✅ 100% backend dependent (no local data)
 
 ---
@@ -42,7 +42,7 @@ Your backend uses these settings:
    - Name: `DB_URI`
    - Value: `mongodb+srv://mostafaelfallah4_db_user:JCCbMRqVo4TDaRFB@cluster-ecommerce.ewxdfs9.mongodb.net/ecommerce-backedn-nodejs?retryWrites=true&w=majority&appName=Cluster-Ecommerce`
 3. Redeploy backend
-4. Test: `curl https://ecommerce-site-backend-oriu.vercel.app/api/v1/products`
+4. Test: `curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products`
 
 ---
 
@@ -78,12 +78,12 @@ Your backend uses these settings:
 ### 3. Code Changes
 ```
 Modified: src/services/clientApi.ts
-  - API_BASE = "https://ecommerce-site-backend-oriu.vercel.app/api/v1"
+  - API_BASE = "https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1"
   - Removed banner fallback data
   - Updated Subcategory interface
 
 Modified: src/services/adminApi.ts
-  - BACKEND_API_BASE = "https://ecommerce-site-backend-oriu.vercel.app/api/v1"
+  - BACKEND_API_BASE = "https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1"
 
 Modified: src/components/AuthProvider.tsx
   - Removed local admin credentials check
@@ -132,7 +132,7 @@ Check Vercel dashboard for your frontend deployment URL
 
 ### Backend
 ```
-https://ecommerce-site-backend-oriu.vercel.app/api/v1
+https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1
 ```
 
 **Status:** Deployed but needs MongoDB connection

@@ -8,7 +8,7 @@ This project is now **entirely dependent** on your backend API. All local fallba
 
 ## 🔗 Backend URL
 
-**Production Backend:** `https://ecommerce-site-backend-oriu.vercel.app/api/v1`
+**Production Backend:** `https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1`
 
 All API calls go to this URL. No local data, no fallbacks, no mock data.
 
@@ -43,8 +43,8 @@ All API calls go to this URL. No local data, no fallbacks, no mock data.
 
 ### Authentication
 ```
-Login → POST https://ecommerce-site-backend-oriu.vercel.app/api/v1/auth/signin
-Register → POST https://ecommerce-site-backend-oriu.vercel.app/api/v1/auth/signup
+Login → POST https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/auth/signin
+Register → POST https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/auth/signup
 ```
 
 **Requirements:**
@@ -179,14 +179,14 @@ All subsequent requests include: Authorization: Bearer {token}
 
 ### Test 1: Check Backend is Accessible
 ```bash
-curl https://ecommerce-site-backend-oriu.vercel.app/api/v1/products
+curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products
 ```
 
 Expected: JSON response with products array
 
 ### Test 2: Check Authentication
 ```bash
-curl -X POST https://ecommerce-site-backend-oriu.vercel.app/api/v1/auth/signin \
+curl -X POST https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/auth/signin \
   -H "Content-Type: application/json" \
   -d '{"email":"your@email.com","password":"yourpassword"}'
 ```
@@ -195,7 +195,7 @@ Expected: JSON with user and token
 
 ### Test 3: Check Banners
 ```bash
-curl https://ecommerce-site-backend-oriu.vercel.app/api/v1/banners
+curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/banners
 ```
 
 Expected: JSON with banners array
@@ -347,7 +347,7 @@ app.use(cors({
 ## 📝 Summary
 
 This frontend is **100% dependent** on your backend at:
-`https://ecommerce-site-backend-oriu.vercel.app/api/v1`
+`https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1`
 
 - ❌ No local data
 - ❌ No mock data

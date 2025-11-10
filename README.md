@@ -22,7 +22,7 @@ Open [http://localhost:3001](http://localhost:3001)
 
 ## 🔗 Backend Connection
 
-**Production Backend:** `https://ecommerce-site-backend-oriu.vercel.app/api/v1`
+**Production Backend:** `https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1`
 
 All API calls automatically go to your production backend. No configuration needed!
 
@@ -95,7 +95,7 @@ All admin forms now include console logging:
 
 ### Test Backend Connection
 ```bash
-curl https://ecommerce-site-backend-oriu.vercel.app/api/v1/products
+curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products
 ```
 
 ### Test in Browser
@@ -111,7 +111,7 @@ curl https://ecommerce-site-backend-oriu.vercel.app/api/v1/products
 
 ### Default Backend (Production)
 ```
-https://ecommerce-site-backend-oriu.vercel.app/api/v1
+https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1
 ```
 
 ### Override (Optional)
@@ -151,7 +151,7 @@ No environment variables needed - backend URL is already configured!
 ## 📞 Troubleshooting
 
 ### Products not loading?
-- Check: `https://ecommerce-site-backend-oriu.vercel.app/api/v1/products`
+- Check: `https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products`
 - Verify backend is running
 - Check browser console for CORS errors
 

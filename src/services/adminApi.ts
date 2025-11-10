@@ -1,6 +1,6 @@
 // Backend API configuration
 // Using deployed backend on Vercel
-const BACKEND_API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-oriu.vercel.app/api/v1";
+const BACKEND_API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1";
 
 // Helper function to get auth token from localStorage
 function getAuthToken(): string | null {
