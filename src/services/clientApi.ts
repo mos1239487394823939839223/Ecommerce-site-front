@@ -623,10 +623,15 @@ export async function getUserOrders(userId: string, token: string) {
 
 export async function createCheckoutSession(cartId: string, data: any, token: string) {
   try {
-    const url = `${API_BASE}/orders/checkout-session/${cartId}?url=http://localhost:3000`;
+    // Use actual frontend URL (Vercel deployment or local)
+    const frontendUrl = typeof window !== 'undefined' 
+      ? window.location.origin 
+      : process.env.NEXT_PUBLIC_FRONTEND_URL || 'http://localhost:3000';
+    const url = `${API_BASE}/orders/checkout-session/${cartId}?url=${frontendUrl}`;
     console.log('createCheckoutSession: Making API request', { 
       url, 
       cartId, 
+      frontendUrl,
       hasToken: !!token,
       tokenLength: token?.length || 0,
       data 

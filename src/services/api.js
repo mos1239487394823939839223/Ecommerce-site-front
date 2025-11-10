@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:8000/api/v1";
+// Use Vercel backend - same as clientApi.ts
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-blue.vercel.app/api/v1";
 
 async function request(path, options = {}) {
   try {

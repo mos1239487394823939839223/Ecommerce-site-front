@@ -151,7 +151,7 @@ export default function BannerForm({
           <div className="mt-2">
             <img
               src={formData.image.startsWith('/') 
-                ? `http://localhost:8000${formData.image}` 
+                ? `https://ecommerce-site-backend-blue.vercel.app${formData.image}` 
                 : formData.image}
               alt="Banner preview"
               className="w-full max-w-md h-40 object-cover rounded-lg border border-gray-300"
