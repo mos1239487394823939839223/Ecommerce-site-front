@@ -1,6 +1,6 @@
 // Backend API configuration
-// You can change this via NEXT_PUBLIC_API_BASE_URL environment variable
-const BACKEND_API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000/api/v1";
+// Using deployed backend on Vercel
+const BACKEND_API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-oriu.vercel.app/api/v1";
 
 // Helper function to get auth token from localStorage
 function getAuthToken(): string | null {

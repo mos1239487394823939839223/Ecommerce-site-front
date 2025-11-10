@@ -1,6 +1,6 @@
 // Backend API Configuration
-// You can change this to your deployed backend URL
-export const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000/api/v1";
+// Using deployed backend on Vercel
+export const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ecommerce-site-backend-oriu.vercel.app/api/v1";
 
 export interface Product {
   _id: string;
@@ -129,55 +129,9 @@ export async function getSubCategories() {
 }
 
 export async function getBanners() {
-  try {
-    const res = await fetch(`${API_BASE}/banners`);
-    if (!res.ok) {
-      throw new Error("Failed to fetch banners");
-    }
-    return res.json();
-  } catch (error) {
-    return {
-      status: "success",
-      data: [
-        {
-          _id: "1",
-          name: "Featured Products",
-          image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
-          link: "/products"
-        },
-        {
-          _id: "2", 
-          name: "Electronics",
-          image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&h=600&fit=crop",
-          link: "/categories/electronics"
-        },
-        {
-          _id: "3",
-          name: "Fashion",
-          image: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&h=600&fit=crop",
-          link: "/categories/fashion"
-        },
-        {
-          _id: "4",
-          name: "Home & Garden",
-          image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop",
-          link: "/categories/home"
-        },
-        {
-          _id: "5",
-          name: "Sports",
-          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-          link: "/categories/sports"
-        },
-        {
-          _id: "6",
-          name: "Beauty",
-          image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop",
-          link: "/categories/beauty"
-        }
-      ]
-    };
-  }
+  const res = await fetch(`${API_BASE}/banners`);
+  if (!res.ok) throw new Error("Failed to fetch banners");
+  return res.json();
 }
 
 export async function getSubCategory(subCategoryId: string) {

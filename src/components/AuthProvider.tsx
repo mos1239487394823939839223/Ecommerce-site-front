@@ -2,7 +2,6 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { signin, signup, forgotPassword, verifyResetCode, User } from '@/services/clientApi';
-import { checkLocalAdminCredentials, getLocalAdminUser, generateLocalAdminToken } from '@/services/localAuth';
 
 interface AuthContextType {
   user: User | null;
@@ -68,20 +67,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = async (email: string, password: string) => {
     try {
-      // Check local admin credentials first (for local development)
-      if (checkLocalAdminCredentials(email, password)) {
-        console.log('AuthProvider: Using local admin credentials');
-        const user = getLocalAdminUser();
-        const token = generateLocalAdminToken();
-        
-        localStorage.setItem('token', token);
-        localStorage.setItem('user', JSON.stringify(user));
-        setUser(user);
-        return;
-      }
+      console.log('AuthProvider: Attempting login with backend API...');
       
       // Use backend API for authentication
       const response = await signin({ email, password });
+      console.log('AuthProvider: Backend response:', response);
       
       // Handle different response structures
       let userData, authToken;
@@ -93,14 +83,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         userData = response.user;
         authToken = response.token;
       } else {
+        console.error('AuthProvider: Invalid response structure:', response);
         throw new Error('Invalid response from server');
       }
       
       if (userData && authToken) {
+        console.log('AuthProvider: Login successful, saving token and user data');
         localStorage.setItem('token', authToken);
         localStorage.setItem('user', JSON.stringify(userData));
         setUser(userData);
       } else {
+        console.error('AuthProvider: Missing user or token in response');
         throw new Error('Invalid email or password');
       }
     } catch (error) {
