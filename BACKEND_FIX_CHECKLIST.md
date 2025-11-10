@@ -73,7 +73,7 @@ Or use any random string like: `mysupersecretjwtkey12345678901234567890abc`
 
 Open this URL in your browser:
 ```
-https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products
+https://ecommerce-site-backend-blue.vercel.app/api/v1/products
 ```
 
 **✅ Success:** You see JSON with products  
@@ -127,7 +127,7 @@ If `MONGODB_URI` doesn't work, your backend might use a different name.
 
 Your frontend will automatically start working because it's already configured to use:
 ```
-https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1
+https://ecommerce-site-backend-blue.vercel.app/api/v1
 ```
 
 Just refresh your frontend site and everything should load! 🎉

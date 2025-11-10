@@ -141,7 +141,7 @@ After adding environment variables:
 Open your browser or use curl:
 
 ```bash
-curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products
+curl https://ecommerce-site-backend-blue.vercel.app/api/v1/products
 ```
 
 **Expected:** JSON response with products array
@@ -156,9 +156,9 @@ curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/pr
 #### 5.2 Test Health/Status Endpoint (if available)
 
 ```bash
-curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/health
+curl https://ecommerce-site-backend-blue.vercel.app/api/v1/health
 # or
-curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/
+curl https://ecommerce-site-backend-blue.vercel.app/
 ```
 
 ---
@@ -336,7 +336,7 @@ Make sure your backend has these endpoints:
 - [ ] Backend is redeployed after setting env vars
 - [ ] CORS is properly configured
 - [ ] All required endpoints exist
-- [ ] Test endpoint returns data: `curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products`
+- [ ] Test endpoint returns data: `curl https://ecommerce-site-backend-blue.vercel.app/api/v1/products`
 
 ---
 
@@ -344,16 +344,16 @@ Make sure your backend has these endpoints:
 
 ```bash
 # Test 1: Get products
-curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products
+curl https://ecommerce-site-backend-blue.vercel.app/api/v1/products
 
 # Test 2: Get categories
-curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/categories
+curl https://ecommerce-site-backend-blue.vercel.app/api/v1/categories
 
 # Test 3: Get brands
-curl https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/brands
+curl https://ecommerce-site-backend-blue.vercel.app/api/v1/brands
 
 # Test 4: Test authentication
-curl -X POST https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/auth/signin \
+curl -X POST https://ecommerce-site-backend-blue.vercel.app/api/v1/auth/signin \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@example.com","password":"password123"}'
 ```

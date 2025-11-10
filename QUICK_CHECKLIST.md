@@ -84,7 +84,7 @@ Print this or follow step-by-step! ✓
 1. [ ] Wait for deployment to show "Ready" (green checkmark)
 2. [ ] Open this URL in browser:
    ```
-   https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/products
+   https://ecommerce-site-backend-blue.vercel.app/api/v1/products
    ```
 
 ### ✅ SUCCESS - You should see:
@@ -148,13 +148,13 @@ Once you see JSON data (Step 4 ✅), test these URLs:
 
 ```bash
 # Categories
-https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/categories
+https://ecommerce-site-backend-blue.vercel.app/api/v1/categories
 
 # Brands
-https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/brands
+https://ecommerce-site-backend-blue.vercel.app/api/v1/brands
 
 # Banners
-https://ecommerce-site-backend-q63ta90s1-ecommerce-amr.vercel.app/api/v1/banners
+https://ecommerce-site-backend-blue.vercel.app/api/v1/banners
 ```
 
 All should return JSON (not errors).
